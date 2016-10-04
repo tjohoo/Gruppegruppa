@@ -1,0 +1,23 @@
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0%;
+    padding: 0.1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+}
