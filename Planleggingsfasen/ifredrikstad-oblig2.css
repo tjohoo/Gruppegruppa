@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*CSS RESET DONE*/
+/*****************************************/
+
+/*
+*FARGER
+* #D6B7B7 - rosa/gammelrosa
+* rgb(214, 183, 183)
+* 800 x 230 - wireframes
+* 200 x 200 skisser
+*/
+
+a,
+a:link,
+a:visited {
+	color: black;
+
+}
+
+
+header {
+  width: 100%;
+  height: 2rem;
+  background-color: rgb(214, 183, 183);
+  padding: 0.5rem;
+}
+
+nav {
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  width: 22%;
+  float: right;
+  padding-top: 0.2rem;
+}
+
+
+nav ul li {
+  list-style: none;
+  text-align: right;
+  float: left;
+  padding-left: 1rem;
+  padding-top: 0.4rem;
+  color: white;
+}
+
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited {
+  color: white;
+  padding: 0.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 2s;
+}
+
+main {
+  width: 70%;
+  margin-top: 2.5rem;
+  margin-left: 12%;
+  margin-right: 12%;
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 0.3rem;
+
+}
+
+article {
+  margin-top: 2rem;
+}
+
+p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+	width: 100%;
+	float: left;
+}
+
+#sitemap {
+	display: block;
+	margin: 0 auto;
+	max-width: 500px;
+	height: auto;
+}
+
+
+.skisse-wrapper {
+	width: 50rem;
+	max-width: 800;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+	display: block;
+	float: left;
+}
+
+#wireframes {
+	width: 65rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	padding-bottom: 1rem;
+}
+
+img {
+	border: 5px solid rgba(255, 255, 255, 0.5);
+	max-width: 230px;
+	max-height: 830px;
+	margin-left: 0.5rem;
+}
+
+article ul {
+	margin: 1rem 1rem;
+}
+
+article ul li {
+  list-style: square;
+  margin-left: 3rem;
+  margin-top: 0.5rem;
+
+
+}
+
+footer {
+  width: 100%;
+  height: 6rem;
+  background-color: rgb(214, 183, 183);
+  color: white;
+  text-align: center;
+}
+#bunnlinje {
+  padding-top: 1rem;
+  font-family: sans-serif;
+}
