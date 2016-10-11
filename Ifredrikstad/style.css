@@ -114,23 +114,23 @@ p {
 } 
 
 #title {
-  background-image: url("file:///C:/Users/Martin/Desktop/skole/WEBUTVIKLING/2oblig/brygga.jpg");
+  background-image: url("brygga.jpg");
    background-attachment: fixed;  
 }
 
 #slide1:before {
-  background-image: url("file:///C:/Users/Martin/Desktop/skole/WEBUTVIKLING/2oblig/gbyen.jpg");
+  background-image: url("gbyen.jpg");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
 
 #slide2 {
-  background-image: url("file:///C:/Users/Martin/Desktop/skole/WEBUTVIKLING/2oblig/elv.jpg");
+  background-image: url("elv.jpg");
   background-attachment: fixed;
 }
 
 #slide3:before {
-  background-image: url("file:///C:/Users/Martin/Desktop/skole/WEBUTVIKLING/2oblig/torv.jpg");
+  background-image: url("torv.jpg");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
