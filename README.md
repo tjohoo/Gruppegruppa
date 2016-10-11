@@ -4,3 +4,4 @@ JOBBEJOBB TEST
 
 
 Caroline prøver å gjøre endringer i Terminalen med nano :)
+Tester litt igjen da. C
