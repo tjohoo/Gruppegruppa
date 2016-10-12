@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Trirong);
 
 html {
   height: 100%;
@@ -19,35 +20,43 @@ header{
   left:0;
   width: 100%;
   z-index: 9999;
+
 }
 
 header nav{
-  width:100%;
-  height:50px;
-  background:lightblue;
-  padding:8px 0 0 0;
+  width: 100%;
+  height: 2rem;
+  background: white;
+  padding:0.5rem 0 0 0;
+
+
 }
 
 
 header nav ul{
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
     list-style: none;
     text-align: center;
+
 }
 
 header nav ul li{
     display: inline-block;
+    margin-right: 2rem;
+
 }
 
 header nav ul li a{
     display: block;
-  	margin-right: 10px;
   	width: 100%;
-    font-size: 140%;
-    line-height: 40px;
-    text-align: center;
+    font-size: 1rem;
     text-decoration: none;
+    font-family: 'Montserrat', serif;
+    color: black;
+    margin-right: 6rem;
+
+
 }
 
 #parallax{
@@ -61,10 +70,28 @@ header nav ul li a{
 
 h1 {
    font-size: 250%;
+   font-family: 'Trirong', serif;
+   text-shadow: 2px 2px 4px black;
 }
 
 h2 {
-   font-size: 250%;
+   font-size: 2.5rem;
+   font-family: 'Trirong', serif;
+   padding-left: 2rem;
+   padding-top: 1.5rem;
+   width: 100rem;
+
+}
+
+h2 a {
+  color: black;
+  text-decoration: none;
+  text-align: left;
+
+}
+
+h2 a:hover {
+  text-decoration: underline;
 }
 
 p {
@@ -78,8 +105,17 @@ p {
   width: 100%;
   bottom: 0;
   height: 15%;
-  background: lightgrey;
+  width: 0;
+  height: 0;
+  border-bottom: 10rem solid rgba(255,255,255,0.7);
+  border-right: 100rem solid transparent;
+
   /*box-shadow: 0 0 8px rgba(0, 0, 0, .7);*/
+}
+
+.box:hover {
+  border-bottom: 10rem solid rgba(255,255,255,1);
+
 }
 
 .slide {
@@ -118,7 +154,7 @@ p {
 
 .header {
   text-align: center;
-  font-size: 175%;
+  font-size: 2.5rem;
   color: #fff;
   text-shadow: 0 2px 2px #000;
 }
@@ -138,9 +174,10 @@ p {
   z-index:1;
   overflow: hidden;
   background-image: url("elv.jpg");
+
 }
 
-#slide2:after{
+#slide2:after {
   background-image: url("elv.jpg");
   transform: translateZ(10px) scale(1);
   z-index: 9999;
@@ -154,7 +191,12 @@ p {
   z-index:2;
 }
 
-#slide4 {
+#slide4 { /*FOOTER*/
   background: #222;
   z-index:3;
+}
+
+footer {
+  height: 16rem;
+
 }
