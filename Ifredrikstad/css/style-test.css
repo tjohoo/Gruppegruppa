@@ -110,6 +110,12 @@ p {
   border-bottom: 10rem solid rgba(255,255,255,1);
 }
 
+@media screen and (max-width:32em){
+  .box{
+    border: none;
+  }
+}
+
 .slide {
   position: relative;
   padding: 25vh 0;
@@ -144,12 +150,12 @@ p {
 }
 
 #title {
-  background-image: url("brygga.jpg");
+  background-image: url("../bilder/brygga.jpg");
   z-index: 10;
 }
 
 #slide1:before {
-  background-image: url("gbyen.jpg");
+  background-image: url("../bilder/gamlebyen_fredrikstad.jpg");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
@@ -157,12 +163,12 @@ p {
 #slide2 {
   z-index:1;
   overflow: hidden;
-  background-image: url("elv.jpg");
+  background-image: url("../bilder/elv.jpg");
 
 }
 
 #slide2:after {
-  background-image: url("elv.jpg");
+  background-image: url("../bilder/elv.jpg");
   transform: translateZ(10px) scale(1);
   z-index: 9999;
   position: absolute;
@@ -170,7 +176,7 @@ p {
 }
 
 #slide3:before {
-  background-image: url("torv.jpg");
+  background-image: url("../bilder/torv.jpg");
   transform: translateZ(-1px) scale(2);
   z-index:2;
 }
