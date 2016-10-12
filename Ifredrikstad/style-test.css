@@ -20,7 +20,6 @@ header{
   left:0;
   width: 100%;
   z-index: 9999;
-
 }
 
 header nav{
@@ -28,17 +27,13 @@ header nav{
   height: 2rem;
   background: white;
   padding:0.5rem 0 0 0;
-
-
 }
-
 
 header nav ul{
     margin: 0 auto;
     width: 100%;
     list-style: none;
     text-align: center;
-
 }
 
 header nav ul li{
@@ -55,8 +50,6 @@ header nav ul li a{
     font-family: 'Montserrat', serif;
     color: black;
     margin-right: 6rem;
-
-
 }
 
 #parallax{
@@ -80,14 +73,12 @@ h2 {
    padding-left: 2rem;
    padding-top: 1.5rem;
    width: 100rem;
-
 }
 
 h2 a {
   color: black;
   text-decoration: none;
   text-align: left;
-
 }
 
 h2 a:hover {
@@ -95,9 +86,9 @@ h2 a:hover {
 }
 
 p {
-  font-size: 140%;
+  font-size: 0.75rem;
   line-height: 150%;
-  color: #333;
+  color: white;
 }
 
 .box {
@@ -109,8 +100,6 @@ p {
   height: 0;
   border-bottom: 10rem solid rgba(255,255,255,0.7);
   border-right: 100rem solid transparent;
-
-  /*box-shadow: 0 0 8px rgba(0, 0, 0, .7);*/
 }
 
 .box:hover {
@@ -124,7 +113,6 @@ p {
   min-height: 100vh;
   width: 100vw;
   box-sizing: border-box;
- /*box-shadow: 0 -1px 10px rgba(0, 0, 0, .7); */
   transform-style: inherit;
 }
 
@@ -194,9 +182,42 @@ p {
 #slide4 { /*FOOTER*/
   background: #222;
   z-index:3;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 footer {
-  height: 16rem;
+  text-align: left;
+}
 
+.footerslide {
+  position: relative;
+  padding: 10vh 0;
+  min-height: 20vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+}
+
+.footerslide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.footerslide:nth-child(2n) {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.footerslide:nth-child(2n+1) {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.footerslide, .footerslide:before {
+  background: 50% 50% / cover;
 }
