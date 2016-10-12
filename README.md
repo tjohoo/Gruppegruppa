@@ -6,3 +6,5 @@ Dette er en endring
 
 
 Caroline prøver å gjøre endringer i Terminalen med nano :)
+Tester litt igjen da. C
+og igjen
