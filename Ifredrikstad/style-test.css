@@ -5,32 +5,44 @@ html {
   overflow: hidden;
 }
 
-.meny{
-	z-index: 9999;
-	position: fixed;
-	overflow: auto;
+body {
+  margin:0;
+  padding:0;
+  font-family: Nunito;
+  position: relative;
+  height: 100%;
 }
 
-nav{
-   width:100%;
-   height:10%;
-   background:lightblue;
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: 9999;
+}
+
+header nav{
+  width:100%;
+  height:50px;
+  background:lightblue;
+  padding:8px 0 0 0;
 }
 
 
-nav ul{
-    margin: auto auto;
+header nav ul{
+    margin: 0 auto;
     width: 1000px;
     list-style: none;
+    text-align: center;
 }
 
-nav ul li{
+header nav ul li{
     display: inline-block;
 }
 
-nav ul li a{
+header nav ul li a{
     display: block;
-  	margin-right: 100;
+  	margin-right: 10px;
   	width: 100%;
     font-size: 140%;
     line-height: 40px;
@@ -38,15 +50,13 @@ nav ul li a{
     text-decoration: none;
 }
 
-body {
-  margin:0;
-  padding:0;
+#parallax{
   perspective: 1px;
   transform-style: preserve-3d;
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: Nunito;
+  position: relative;
 }
 
 h1 {
@@ -64,12 +74,12 @@ p {
 }
 
 .box {
-  position: fixed;
+  position: absolute;
   width: 100%;
   bottom: 0;
   height: 15%;
   background: lightgrey;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  /*box-shadow: 0 0 8px rgba(0, 0, 0, .7);*/
 }
 
 .slide {
@@ -78,7 +88,7 @@ p {
   min-height: 100vh;
   width: 100vw;
   box-sizing: border-box;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+ /*box-shadow: 0 -1px 10px rgba(0, 0, 0, .7); */
   transform-style: inherit;
 }
 
@@ -115,7 +125,7 @@ p {
 
 #title {
   background-image: url("brygga.jpg");
-   background-attachment: fixed;
+  z-index: 10;
 }
 
 #slide1:before {
@@ -125,16 +135,26 @@ p {
 }
 
 #slide2 {
+  z-index:1;
+  overflow: hidden;
   background-image: url("elv.jpg");
-  background-attachment: fixed;
+}
+
+#slide2:after{
+  background-image: url("elv.jpg");
+  transform: translateZ(10px) scale(1);
+  z-index: 9999;
+  position: absolute;
+  top: 0;
 }
 
 #slide3:before {
   background-image: url("torv.jpg");
   transform: translateZ(-1px) scale(2);
-  z-index:-1;
+  z-index:2;
 }
 
 #slide4 {
   background: #222;
+  z-index:3;
 }
